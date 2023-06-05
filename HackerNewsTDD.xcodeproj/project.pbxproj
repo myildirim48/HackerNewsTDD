@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746AE6B72A2E10C600B444F6 /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AE6B62A2E10C600B444F6 /* SearchViewControllerTests.swift */; };
+		746AE6B92A2E10ED00B444F6 /* FavoritesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AE6B82A2E10ED00B444F6 /* FavoritesViewControllerTests.swift */; };
+		746AE6BB2A2E19AC00B444F6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AE6BA2A2E19AC00B444F6 /* WebViewController.swift */; };
 		74EA88B82A2BAF1200307BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88B72A2BAF1200307BC8 /* AppDelegate.swift */; };
 		74EA88BA2A2BAF1200307BC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88B92A2BAF1200307BC8 /* SceneDelegate.swift */; };
 		74EA88C12A2BAF1300307BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EA88C02A2BAF1300307BC8 /* Assets.xcassets */; };
 		74EA88C42A2BAF1300307BC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EA88C22A2BAF1300307BC8 /* LaunchScreen.storyboard */; };
-		74EA88D22A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88D12A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift */; };
+		74EA88D22A2BAFDD00307BC8 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88D12A2BAFDD00307BC8 /* HomeViewControllerTests.swift */; };
 		74EA88D92A2CFCBC00307BC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88D82A2CFCBC00307BC8 /* HomeViewController.swift */; };
 		74EA88DB2A2CFD2600307BC8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88DA2A2CFD2600307BC8 /* Article.swift */; };
 		74EA88DD2A2CFFAF00307BC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88DC2A2CFFAF00307BC8 /* NetworkManager.swift */; };
@@ -38,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		746AE6B32A2E100100B444F6 /* HackerNewsTDD.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = HackerNewsTDD.xctestplan; sourceTree = "<group>"; };
+		746AE6B62A2E10C600B444F6 /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
+		746AE6B82A2E10ED00B444F6 /* FavoritesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerTests.swift; sourceTree = "<group>"; };
+		746AE6BA2A2E19AC00B444F6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		74EA88B42A2BAF1200307BC8 /* HackerNewsTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EA88B72A2BAF1200307BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74EA88B92A2BAF1200307BC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +52,7 @@
 		74EA88C32A2BAF1300307BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74EA88C52A2BAF1300307BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74EA88CF2A2BAFDD00307BC8 /* HackerNewsTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74EA88D12A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsHomeViewControllerTests.swift; sourceTree = "<group>"; };
+		74EA88D12A2BAFDD00307BC8 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		74EA88D82A2CFCBC00307BC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		74EA88DA2A2CFD2600307BC8 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		74EA88DC2A2CFFAF00307BC8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -78,6 +85,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		746AE6B42A2E109800B444F6 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				74FECB692A2DF555004C834C /* SearchViewController.swift */,
+				74EA88D82A2CFCBC00307BC8 /* HomeViewController.swift */,
+				74FECB6B2A2DF55B004C834C /* FavoritesViewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		746AE6B52A2E10AC00B444F6 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				746AE6B62A2E10C600B444F6 /* SearchViewControllerTests.swift */,
+				746AE6B82A2E10ED00B444F6 /* FavoritesViewControllerTests.swift */,
+				74EA88D12A2BAFDD00307BC8 /* HomeViewControllerTests.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		74EA88AB2A2BAF1200307BC8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +130,7 @@
 				74FECB662A2DF520004C834C /* Core */,
 				74EA88B72A2BAF1200307BC8 /* AppDelegate.swift */,
 				74EA88B92A2BAF1200307BC8 /* SceneDelegate.swift */,
+				746AE6BA2A2E19AC00B444F6 /* WebViewController.swift */,
 				74EA88C02A2BAF1300307BC8 /* Assets.xcassets */,
 				74EA88C22A2BAF1300307BC8 /* LaunchScreen.storyboard */,
 				74EA88C52A2BAF1300307BC8 /* Info.plist */,
@@ -114,6 +142,7 @@
 		74EA88D02A2BAFDD00307BC8 /* HackerNewsTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				746AE6B32A2E100100B444F6 /* HackerNewsTDD.xctestplan */,
 				74FECB732A2DFC38004C834C /* Core */,
 				74FECB632A2DD006004C834C /* MockNetworkManager */,
 			);
@@ -143,10 +172,8 @@
 		74FECB662A2DF520004C834C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				74EA88D82A2CFCBC00307BC8 /* HomeViewController.swift */,
 				74FECB672A2DF52F004C834C /* MainTabBarController.swift */,
-				74FECB692A2DF555004C834C /* SearchViewController.swift */,
-				74FECB6B2A2DF55B004C834C /* FavoritesViewController.swift */,
+				746AE6B42A2E109800B444F6 /* Tabs */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -162,8 +189,8 @@
 		74FECB732A2DFC38004C834C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				74EA88D12A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift */,
 				74FECB642A2DE44E004C834C /* MainTabBarControllerTests.swift */,
+				746AE6B52A2E10AC00B444F6 /* Tabs */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -274,6 +301,7 @@
 				74EA88DD2A2CFFAF00307BC8 /* NetworkManager.swift in Sources */,
 				74FECB6C2A2DF55B004C834C /* FavoritesViewController.swift in Sources */,
 				74FECB6A2A2DF555004C834C /* SearchViewController.swift in Sources */,
+				746AE6BB2A2E19AC00B444F6 /* WebViewController.swift in Sources */,
 				74FECB712A2DF6AF004C834C /* MockNetworkManager.swift in Sources */,
 				74EA88B82A2BAF1200307BC8 /* AppDelegate.swift in Sources */,
 				74FECB682A2DF52F004C834C /* MainTabBarController.swift in Sources */,
@@ -287,10 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746AE6B92A2E10ED00B444F6 /* FavoritesViewControllerTests.swift in Sources */,
 				74FECB5E2A2DC390004C834C /* NetworkManagerTests.swift in Sources */,
+				746AE6B72A2E10C600B444F6 /* SearchViewControllerTests.swift in Sources */,
 				74FECB522A2DBC5D004C834C /* MockNetworkManager.swift in Sources */,
 				74FECB6E2A2DF5E6004C834C /* MainTabBarControllerTests.swift in Sources */,
-				74EA88D22A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift in Sources */,
+				74EA88D22A2BAFDD00307BC8 /* HomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

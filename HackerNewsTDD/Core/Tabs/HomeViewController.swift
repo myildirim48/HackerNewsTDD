@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationItem.title = "HackerNews"
+        navigationController?.navigationBar.prefersLargeTitles = true
         configureTableView()
         
         Task {
@@ -39,6 +40,17 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.frame = view.frame
+        
+        let refreshController = UIRefreshControl()
+        refreshController.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        tableView.refreshControl = refreshController
+    }
+    
+    //MARK: - Actions
+    @objc func handleRefresh() {
+        Task {
+            await fetchData()
+        }
     }
     
     //MARK: - API
@@ -49,6 +61,7 @@ class HomeViewController: UIViewController {
             self.articles = results
             await MainActor.run {
                 tableView.reloadData()
+                tableView.refreshControl?.endRefreshing()
             }
         } catch {
             print(error.localizedDescription)
@@ -59,6 +72,10 @@ class HomeViewController: UIViewController {
 //MARK: - TableView
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
     }
@@ -67,5 +84,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = articles[indexPath.row].title
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let selectedUrl = articles[indexPath.row].url else { return }
+        guard let pageUrl = URL(string: selectedUrl) else { return }
+        
+        let webView = WebViewController(pageUrl: pageUrl)
+        navigationController?.pushViewController(webView, animated: true )
     }
 }

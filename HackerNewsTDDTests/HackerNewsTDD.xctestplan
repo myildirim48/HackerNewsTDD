@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "DFAD280B-115E-4A80-BBCA-56A9A78E8F88",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:HackerNewsTDD.xcodeproj",
+      "identifier" : "74EA88B32A2BAF1200307BC8",
+      "name" : "HackerNewsTDD"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:HackerNewsTDD.xcodeproj",
+        "identifier" : "74EA88CE2A2BAFDD00307BC8",
+        "name" : "HackerNewsTDDTests"
+      }
+    }
+  ],
+  "version" : 1
+}

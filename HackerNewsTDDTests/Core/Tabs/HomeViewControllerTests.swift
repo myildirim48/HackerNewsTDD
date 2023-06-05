@@ -1,6 +1,6 @@
 //
-//  HackerNewsHomeViewControllerTests.swift
-//  HackerNewsHomeViewControllerTests
+//  HomeViewControllerTests.swift
+//  HomeViewControllerTests
 //
 //  Created by YILDIRIM on 3.06.2023.
 //
@@ -8,14 +8,13 @@
 import XCTest
 @testable import HackerNewsTDD
 
-final class HackerNewsHomeViewControllerTests: XCTestCase {
+final class HomeViewControllerTests: XCTestCase {
 
     var sut: HomeViewController!
     
     override func setUp() {
         super.setUp()
-        let jsonFile = "MultiJSONResponse"
-        let networkManager = MockNetworkManager(jsonFile: jsonFile)
+        let networkManager = MockNetworkManager( )
         sut = HomeViewController(networkManager: networkManager)
     }
     
@@ -82,6 +81,14 @@ final class HackerNewsHomeViewControllerTests: XCTestCase {
         
 //        Then
         XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), articles.count)
+    }
+    
+    func test_didConfigureRefreshController() {
+//        Given
+        sut.loadViewIfNeeded()
+        
+//        Then
+        XCTAssertNotNil(sut.tableView.refreshControl)
     }
     
 }

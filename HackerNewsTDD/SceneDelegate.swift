@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         var networkManager: NetworkManagerProtocol?
         if testing {
-        networkManager = MockNetworkManager(jsonFile: "SingleJSONResponse")
+        networkManager = MockNetworkManager()
         }else {
             networkManager = NetworkManager.shared
         }

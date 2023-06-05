@@ -12,7 +12,7 @@ final class MainTabBarControllerTests: XCTestCase {
 
     func test_didTabBarSetupViewController() {
 //        Given
-        let sut = MainTabBarController(networkManager: MockNetworkManager(jsonFile: ""))
+        let sut = MainTabBarController(networkManager: MockNetworkManager())
 //        When
         sut.loadViewIfNeeded()
         guard let viewControllers = sut.viewControllers else {
