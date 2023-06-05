@@ -14,7 +14,9 @@ final class HackerNewsHomeViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        sut = HomeViewController()
+        let jsonFile = "MultiJSONResponse"
+        let networkManager = MockNetworkManager(jsonFile: jsonFile)
+        sut = HomeViewController(networkManager: networkManager)
     }
     
     override func tearDown() {
@@ -22,10 +24,35 @@ final class HackerNewsHomeViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
+    func createArticleArrayOfLength(_ length: Int) -> [Article] {
+        var newArticles = [Article]()
+        for _ in 0..<length {
+            
+            let newArticle = Article(title: "hil", author: nil, points: nil, objectID: nil, url: nil)
+            newArticles.append(newArticle)
+        }
+        return newArticles
+    }
+    
+    func test_DidsetTitleForVC() {
+//        When
+        sut.loadViewIfNeeded()
+//        Given
+        XCTAssertEqual(sut.title, "HackerNews")
+    }
+    
+    func test_DidConfgiureTableViewDatasourceAndDelegate() {
+//        When
+        sut.loadViewIfNeeded()
+//        Given
+        XCTAssertNotNil(sut.tableView.dataSource)
+        XCTAssertNotNil(sut.tableView.delegate)
+    }
+    
     func test_tableViewShouldBeEmpty() {
 
 //        When
-        sut.articles = []
+        sut.articles = createArticleArrayOfLength(0)
         sut.loadViewIfNeeded()
         
 //        Then
@@ -33,8 +60,11 @@ final class HackerNewsHomeViewControllerTests: XCTestCase {
     }
    
     func test_tableViewHasOneItem() {
+//        Given
+        let articles = createArticleArrayOfLength(1)
+        sut.articles = articles
+        
 //        When
-        sut.articles.append(Article())
         sut.loadViewIfNeeded()
         
 //        Then
@@ -42,9 +72,10 @@ final class HackerNewsHomeViewControllerTests: XCTestCase {
     }
     
     func test_tableViewHasManyItem() {
-
+//        Given
+        let articles = createArticleArrayOfLength(5)
+        
 //        When
-        let articles = [Article(),Article(),Article(),Article(),Article()]
         sut.articles = articles
         sut.loadViewIfNeeded()
         
@@ -52,6 +83,4 @@ final class HackerNewsHomeViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), articles.count)
     }
     
-    
 }
-

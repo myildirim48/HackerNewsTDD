@@ -1,0 +1,157 @@
+
+{
+    "hits": [
+        {
+            "created_at": "2023-06-04T15:07:29.000Z",
+            "title": "Show HN: Rarbg on IPFS",
+            "url": "https://ipfs.io/ipfs/QmbpRxBZ5HDZDVRoeAU8xFYnoP4r5eGCxdkmfFW3JbA6mq/",
+            "author": "rarbgipfs",
+            "points": 578,
+            "objectID": "36186185"
+        },
+        {
+            "created_at": "2023-06-04T07:07:46.000Z",
+            "title": "DreamBerd is a perfect programming language",
+            "url": "https://github.com/TodePond/DreamBerd",
+            "author": "Davidbrcz",
+            "points": 522,
+            "objectID": "36183683"
+        },
+        {
+            "created_at": "2023-06-04T15:06:51.000Z",
+            "title": "Anything can be a message queue if you use it wrongly enough",
+            "url": "https://xeiaso.net/blog/anything-message-queue",
+            "author": "cendyne",
+            "points": 490,
+            "objectID": "36186176"
+        },
+        {
+            "created_at": "2023-06-04T17:33:24.000Z",
+            "title": "WFH – Watched from Home: Office 365 and workplace surveillance creep (2022)",
+            "url": "https://privacyinternational.org/long-read/4909/wfh-watched-home-office-365-and-workplace-surveillance-creep",
+            "author": "thunderbong",
+            "points": 388,
+            "objectID": "36187550"
+        },
+        {
+            "created_at": "2023-06-05T04:34:54.000Z",
+            "title": "Tell HN: My Reddit account was banned after adding my subs to the protest",
+            "url": null,
+            "author": "goplayoutside",
+            "points": 262,
+            "objectID": "36192312"
+        },
+        {
+            "created_at": "2023-06-05T04:16:41.000Z",
+            "title": "Generative AI learning path",
+            "url": "https://www.cloudskillsboost.google/paths/118",
+            "author": "sh_tomer",
+            "points": 236,
+            "objectID": "36192195"
+        },
+        {
+            "created_at": "2023-06-04T18:16:40.000Z",
+            "title": "It’s infuriatingly hard to understand how closed models train on their input",
+            "url": "https://simonwillison.net/2023/Jun/4/closed-model-training/",
+            "author": "simonw",
+            "points": 219,
+            "objectID": "36187994"
+        },
+        {
+            "created_at": "2023-06-04T21:54:38.000Z",
+            "title": "Social media for AI bots: “No humans allowed”",
+            "url": "https://www.fry-ai.com/p/social-media-no-humans-allowed",
+            "author": "mannylee1",
+            "points": 215,
+            "objectID": "36189962"
+        },
+        {
+            "created_at": "2023-06-04T16:55:01.000Z",
+            "title": "Dennis Ritchie’s page on Bell Labs website",
+            "url": "https://www.bell-labs.com/usr/dmr/www/",
+            "author": "massimosgrelli",
+            "points": 191,
+            "objectID": "36187174"
+        },
+        {
+            "created_at": "2023-06-04T21:48:56.000Z",
+            "title": "Blink 1.0",
+            "url": "https://github.com/jart/blink/releases/tag/1.0.0",
+            "author": "todsacerdoti",
+            "points": 191,
+            "objectID": "36189920"
+        },
+        {
+            "created_at": "2023-06-05T02:42:00.000Z",
+            "title": "Parents in Ireland town to voluntarily ban smartphones for kids as old as 13",
+            "url": "https://www.businessinsider.com/voluntary-smartphone-ban-for-kids-ireland-town-greystones-2023-6",
+            "author": "thunderbong",
+            "points": 160,
+            "objectID": "36191657"
+        },
+        {
+            "created_at": "2023-06-04T21:52:17.000Z",
+            "title": "Live dashboard of carbon dioxide removal purchases",
+            "url": "https://www.cdr.fyi/",
+            "author": "Kortaggio",
+            "points": 103,
+            "objectID": "36189942"
+        },
+        {
+            "created_at": "2023-06-05T03:15:44.000Z",
+            "title": "Mystery math whiz and novelist advance permutation problem",
+            "url": "https://www.quantamagazine.org/sci-fi-writer-greg-egan-and-anonymous-math-whiz-advance-permutation-problem-20181105/",
+            "author": "sashank_1509",
+            "points": 90,
+            "objectID": "36191831"
+        },
+        {
+            "created_at": "2023-06-05T05:00:01.000Z",
+            "title": "Moderation strike",
+            "url": "https://meta.stackexchange.com/questions/389811/moderation-strike-stack-overflow-inc-cannot-consistently-ignore-mistreat-an",
+            "author": "mwint",
+            "points": 89,
+            "objectID": "36192497"
+        },
+        {
+            "created_at": "2023-06-04T17:55:02.000Z",
+            "title": "AMD’s RX 7600: Small RDNA 3 Appears",
+            "url": "https://chipsandcheese.com/2023/06/04/amds-rx-7600-small-rdna-3-appears/",
+            "author": "picture",
+            "points": 80,
+            "objectID": "36187744"
+        },
+        {
+            "created_at": "2023-06-05T02:48:17.000Z",
+            "title": "I wrote my own smart home software",
+            "url": "https://renato.athaydes.com/posts/writing-your-own-smarthome-manager.html",
+            "author": "thunderbong",
+            "points": 80,
+            "objectID": "36191688"
+        },
+        {
+            "created_at": "2023-06-04T20:09:09.000Z",
+            "title": "Crun: Fast and lightweight OCI runtime and C library for running containers",
+            "url": "https://github.com/containers/crun",
+            "author": "nateb2022",
+            "points": 78,
+            "objectID": "36189107"
+        },
+        {
+            "created_at": "2022-11-27T19:18:16.000Z",
+            "title": "Emacs Lisp shorthands as namespacing system",
+            "url": "https://andreyorst.gitlab.io/posts/2022-11-01-emacs-lisp-shorthands-as-namespacing-system/",
+            "author": "gjvc",
+            "points": 78,
+            "objectID": "33765735"
+        },
+        {
+            "created_at": "2023-06-04T21:07:55.000Z",
+            "title": "Wonky – An exploration of rhythm and grooves that break the rules",
+            "url": "https://pudding.cool/2023/06/groove/",
+            "author": "mrzool",
+            "points": 78,
+            "objectID": "36189583"
+        }
+    ]
+}

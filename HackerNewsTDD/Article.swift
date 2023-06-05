@@ -6,7 +6,16 @@
 //
 
 import Foundation
-struct Article {
-    
+
+struct Response: Codable {
+    let hits: [Article]
+}
+
+struct Article: Codable {
+    let title: String
+    let author: String?
+    let points: Int?
+    let objectID: String?
+    let url: String?
 }
 

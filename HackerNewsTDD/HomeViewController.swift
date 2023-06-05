@@ -7,22 +7,49 @@
 
 import UIKit
 
-class HomeViewController: UIViewController{
+class HomeViewController: UIViewController {
     
     var articles = [Article]()
     var tableView = UITableView()
+    let networkManager: NetworkManagerProtocol
+    
+    init(networkManager: NetworkManagerProtocol) {
+        self.networkManager = networkManager
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
+        title = "HackerNews"
         configureTableView()
+        
+        Task {
+            await fetchData()
+        }
     }
-    
+    //MARK: - Helpers
     private func configureTableView(){
         view.addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.frame = view.frame
+    }
+    
+    //MARK: - API
+    
+    private func fetchData() async {
+        do {
+            try await networkManager.fetchHomeViewArticles()
+        } catch {
+            print(error.localizedDescription)
+        }
+        
     }
 }
 //MARK: - TableView
