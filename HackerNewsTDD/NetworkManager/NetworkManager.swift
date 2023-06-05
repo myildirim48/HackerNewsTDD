@@ -13,6 +13,8 @@ protocol NetworkManagerProtocol {
 
 class NetworkManager: NetworkManagerProtocol {
     
+    static let shared = NetworkManager()
+    
     private let url = "https://hn.algolia.com/api/v1/search?tags=front_page"
     private init() {
         

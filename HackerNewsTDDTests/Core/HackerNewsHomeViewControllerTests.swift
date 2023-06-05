@@ -37,8 +37,9 @@ final class HackerNewsHomeViewControllerTests: XCTestCase {
     func test_DidsetTitleForVC() {
 //        When
         sut.loadViewIfNeeded()
+        let title = sut.navigationItem.title
 //        Given
-        XCTAssertEqual(sut.title, "HackerNews")
+        XCTAssertEqual(title, "HackerNews")
     }
     
     func test_DidConfgiureTableViewDatasourceAndDelegate() {

@@ -16,8 +16,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        let navVC = UINavigationController(rootViewController: ViewController())
-        window.rootViewController = navVC
+        
+        
+        let testing: Bool = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+        
+        
+        var networkManager: NetworkManagerProtocol?
+        if testing {
+        networkManager = MockNetworkManager(jsonFile: "SingleJSONResponse")
+        }else {
+            networkManager = NetworkManager.shared
+        }
+        guard let networkManager else { return }
+        
+        let tabbar = MainTabBarController(networkManager: networkManager)
+        window.rootViewController = tabbar
         self.window = window
     }
 

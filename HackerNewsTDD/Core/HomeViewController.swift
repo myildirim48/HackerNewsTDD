@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "HackerNews"
+        navigationItem.title = "HackerNews"
         configureTableView()
         
         Task {
@@ -45,7 +45,11 @@ class HomeViewController: UIViewController {
     
     private func fetchData() async {
         do {
-            try await networkManager.fetchHomeViewArticles()
+           let results = try await networkManager.fetchHomeViewArticles()
+            self.articles = results
+            await MainActor.run {
+                tableView.reloadData()
+            }
         } catch {
             print(error.localizedDescription)
         }
@@ -61,6 +65,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = articles[indexPath.row].title
         return cell
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		74EA88B82A2BAF1200307BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88B72A2BAF1200307BC8 /* AppDelegate.swift */; };
 		74EA88BA2A2BAF1200307BC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88B92A2BAF1200307BC8 /* SceneDelegate.swift */; };
-		74EA88BC2A2BAF1200307BC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88BB2A2BAF1200307BC8 /* ViewController.swift */; };
 		74EA88C12A2BAF1300307BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74EA88C02A2BAF1300307BC8 /* Assets.xcassets */; };
 		74EA88C42A2BAF1300307BC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EA88C22A2BAF1300307BC8 /* LaunchScreen.storyboard */; };
 		74EA88D22A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA88D12A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift */; };
@@ -21,6 +20,11 @@
 		74FECB5C2A2DC303004C834C /* SingleJSONResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 74FECB5B2A2DC303004C834C /* SingleJSONResponse.json */; };
 		74FECB5E2A2DC390004C834C /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FECB5D2A2DC390004C834C /* NetworkManagerTests.swift */; };
 		74FECB622A2DCE4F004C834C /* MultiJSONResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 74FECB612A2DCE4F004C834C /* MultiJSONResponse.json */; };
+		74FECB682A2DF52F004C834C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FECB672A2DF52F004C834C /* MainTabBarController.swift */; };
+		74FECB6A2A2DF555004C834C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FECB692A2DF555004C834C /* SearchViewController.swift */; };
+		74FECB6C2A2DF55B004C834C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FECB6B2A2DF55B004C834C /* FavoritesViewController.swift */; };
+		74FECB6E2A2DF5E6004C834C /* MainTabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FECB642A2DE44E004C834C /* MainTabBarControllerTests.swift */; };
+		74FECB712A2DF6AF004C834C /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FECB512A2DBC5D004C834C /* MockNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 		74EA88B42A2BAF1200307BC8 /* HackerNewsTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EA88B72A2BAF1200307BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74EA88B92A2BAF1200307BC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74EA88BB2A2BAF1200307BC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74EA88C02A2BAF1300307BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74EA88C32A2BAF1300307BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74EA88C52A2BAF1300307BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +54,10 @@
 		74FECB5B2A2DC303004C834C /* SingleJSONResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleJSONResponse.json; sourceTree = "<group>"; };
 		74FECB5D2A2DC390004C834C /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		74FECB612A2DCE4F004C834C /* MultiJSONResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MultiJSONResponse.json; sourceTree = "<group>"; };
+		74FECB642A2DE44E004C834C /* MainTabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarControllerTests.swift; sourceTree = "<group>"; };
+		74FECB672A2DF52F004C834C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		74FECB692A2DF555004C834C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		74FECB6B2A2DF55B004C834C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,15 +99,14 @@
 		74EA88B62A2BAF1200307BC8 /* HackerNewsTDD */ = {
 			isa = PBXGroup;
 			children = (
+				74FECB722A2DFC1A004C834C /* NetworkManager */,
+				74FECB662A2DF520004C834C /* Core */,
 				74EA88B72A2BAF1200307BC8 /* AppDelegate.swift */,
 				74EA88B92A2BAF1200307BC8 /* SceneDelegate.swift */,
-				74EA88BB2A2BAF1200307BC8 /* ViewController.swift */,
 				74EA88C02A2BAF1300307BC8 /* Assets.xcassets */,
 				74EA88C22A2BAF1300307BC8 /* LaunchScreen.storyboard */,
 				74EA88C52A2BAF1300307BC8 /* Info.plist */,
-				74EA88D82A2CFCBC00307BC8 /* HomeViewController.swift */,
 				74EA88DA2A2CFD2600307BC8 /* Article.swift */,
-				74EA88DC2A2CFFAF00307BC8 /* NetworkManager.swift */,
 			);
 			path = HackerNewsTDD;
 			sourceTree = "<group>";
@@ -108,8 +114,8 @@
 		74EA88D02A2BAFDD00307BC8 /* HackerNewsTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				74FECB732A2DFC38004C834C /* Core */,
 				74FECB632A2DD006004C834C /* MockNetworkManager */,
-				74EA88D12A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift */,
 			);
 			path = HackerNewsTDDTests;
 			sourceTree = "<group>";
@@ -132,6 +138,34 @@
 				74FECB512A2DBC5D004C834C /* MockNetworkManager.swift */,
 			);
 			path = MockNetworkManager;
+			sourceTree = "<group>";
+		};
+		74FECB662A2DF520004C834C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				74EA88D82A2CFCBC00307BC8 /* HomeViewController.swift */,
+				74FECB672A2DF52F004C834C /* MainTabBarController.swift */,
+				74FECB692A2DF555004C834C /* SearchViewController.swift */,
+				74FECB6B2A2DF55B004C834C /* FavoritesViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		74FECB722A2DFC1A004C834C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				74EA88DC2A2CFFAF00307BC8 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		74FECB732A2DFC38004C834C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				74EA88D12A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift */,
+				74FECB642A2DE44E004C834C /* MainTabBarControllerTests.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				74EA88DD2A2CFFAF00307BC8 /* NetworkManager.swift in Sources */,
-				74EA88BC2A2BAF1200307BC8 /* ViewController.swift in Sources */,
+				74FECB6C2A2DF55B004C834C /* FavoritesViewController.swift in Sources */,
+				74FECB6A2A2DF555004C834C /* SearchViewController.swift in Sources */,
+				74FECB712A2DF6AF004C834C /* MockNetworkManager.swift in Sources */,
 				74EA88B82A2BAF1200307BC8 /* AppDelegate.swift in Sources */,
+				74FECB682A2DF52F004C834C /* MainTabBarController.swift in Sources */,
 				74EA88BA2A2BAF1200307BC8 /* SceneDelegate.swift in Sources */,
 				74EA88D92A2CFCBC00307BC8 /* HomeViewController.swift in Sources */,
 				74EA88DB2A2CFD2600307BC8 /* Article.swift in Sources */,
@@ -252,6 +289,7 @@
 			files = (
 				74FECB5E2A2DC390004C834C /* NetworkManagerTests.swift in Sources */,
 				74FECB522A2DBC5D004C834C /* MockNetworkManager.swift in Sources */,
+				74FECB6E2A2DF5E6004C834C /* MainTabBarControllerTests.swift in Sources */,
 				74EA88D22A2BAFDD00307BC8 /* HackerNewsHomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
